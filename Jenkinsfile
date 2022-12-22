@@ -11,7 +11,7 @@ pipeline{
             steps{
                 echo 'pulling from git ... ';
                 git branch:'jecer',
-                url:'https://github.com/mintoua/JenkinsPipeDemo.git';
+                url:'https://github.com/JecerBenH/JenkinsPipeline.git';
             }
         }
         
@@ -61,7 +61,7 @@ pipeline{
          stage('Docker login') {
               steps {
                    script {
-                         sh 'docker login -u jecer1997 -p 4CDP25fun'
+                         sh 'docker login -u jecer1997 -p *******'
                    }
               }
          }
